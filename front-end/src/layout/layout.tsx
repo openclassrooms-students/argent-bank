@@ -4,13 +4,11 @@ import Navbar from "./Navbar";
 
 const Layout = () => {
   return (
-    <div className="body">
+    <>
       <Navbar />
-      <main className="flex-auto bg-gray-200">
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
-    </div>
+    </>
   );
 };
 export default Layout;

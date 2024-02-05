@@ -6,8 +6,11 @@ html {
   color: #2c3e50;
 }
 
-.body {
+body {
   margin: 0;
+}
+
+#root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -71,7 +74,7 @@ html {
 }
 
 .hero {
-  background-image: url('../img/bank-tree.jpeg');
+  background-image: url("../img/bank-tree.jpeg");
   background-position: 0 -50px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -290,10 +293,37 @@ html {
   }
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  background-color: #f8d7da;
+  border-radius: 5px;
+}
 
-.sign-in {
+.danger {
+  color: white;
+  background-color: red;
+  border-color: transparent;
+}
+
+.profile-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile-form div {
+  width: 100%;
+}
+
+
+.profile-form-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
 }
